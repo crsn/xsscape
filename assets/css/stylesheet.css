@@ -1,0 +1,107 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Elements */
+::-webkit-scrollbar,
+::-webkit-scrollbar
+{
+	width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track
+{
+	background-color: #202232;
+}
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb
+{
+	background-color: #d346b1;
+}
+::-webkit-scrollbar-corner
+{
+	background-color: #202232;
+}
+
+body
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #1d1d2c;
+	color: #9a9a9a;
+
+	font-family: 'Space Mono', monospace;
+	font-feature-settings: 'liga' off, 'calt' off;
+}
+
+h1
+{
+	margin: 0px;
+
+	color: #fff;
+	
+	font-size: 48pt;
+}
+
+textarea,
+pre
+{
+	width: calc(100vw * 0.5);
+	height: 200px;
+
+	max-width: calc(100vw * 0.5);
+	max-height: 200px;
+
+	overflow: auto;
+
+	padding: 10px;
+	margin: 10px 0px;
+
+	border: none;
+	border-radius: 5px;
+
+	resize: none;
+
+	background-color: #27293d;
+	color: #9a9a9a;
+
+	font-family: 'Space Mono', monospace;
+	font-feature-settings: 'liga' off, 'calt' off;
+	font-size: 14pt;
+}
+textarea:focus { outline: none; }
+
+button
+{
+	width: 100%;
+
+	padding: 10px;
+	margin: 10px 0px;
+
+	border: none;
+	border-radius: 5px;
+
+	background-color: #d346b1;
+	color: #fff;
+
+	font-family: 'Space Mono', monospace;
+	font-feature-settings: 'liga' off, 'calt' off;
+	font-size: 14pt;
+}
+button:hover
+{
+	background-color: #ff55d6;
+	transition: ease 0.5s;
+	cursor: pointer;
+}
+
+/* Classes */
+.disclaimer { color: #3a3a50; font-size: 8pt; }
