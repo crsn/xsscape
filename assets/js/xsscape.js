@@ -20,7 +20,8 @@ function encodePayload(payload)
 		{ description: 'URL Encoded', result: encodeURIComponent(payload) },
 		{ description: 'Base64 Encoded', result: btoa(payload) },
 		{ description: 'Hexadecimal Encoded', result: payload.split('').map(char => '%' + char.charCodeAt(0).toString(16)).join('') },
-		{ description: 'Unicode Encoded', result: payload.split('').map(char => '\\u' + char.charCodeAt(0).toString(16).padStart(4, '0')).join('') }
+		{ description: 'Unicode Encoded', result: payload.split('').map(char => '\\u' + char.charCodeAt(0).toString(16).padStart(4, '0')).join('') },
+		{ description: 'JavaScript Unicode Encoded', result: payload.split('').map(char => '\\x' + char.charCodeAt(0).toString(16).padStart(2, '0')).join('') }
 	];
 
 	return encodedPayloads;
